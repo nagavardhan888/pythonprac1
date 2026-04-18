@@ -26,12 +26,18 @@
 # else:
 #     print("Not an armstrong number")
 ######################## 5 th page  donee ################################################
-# pattern printing - number pyramid 
-n = int(input("enter number of rowns:"))
-num=1
-for i in range(1,n+1):
-    for j in range(1,i+1):
-        print(num,end=" ")
-        num+=1
-    print()
+# ##########pattern printing - number pyramid 
+# n = int(input("enter the number of rows:"))
+# num=1;
+# for i in range(1,n+1):
+#     for j in range(1,i+1):
+#         print(num,end=" ")
+#         num+=1
+#     print()
+#factorial 
+# n = int(input("enter the number: "))
+# fact =1 
+# for i in range(1,n+1):
+#     fact = fact*i
+# print(fact)
 
