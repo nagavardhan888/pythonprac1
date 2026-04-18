@@ -34,10 +34,52 @@
 #         print(num,end=" ")
 #         num+=1
 #     print()
-#factorial 
+###########factorial 
 # n = int(input("enter the number: "))
 # fact =1 
 # for i in range(1,n+1):
 #     fact = fact*i
 # print(fact)
+##########reverse number
+# n = int(input("enter the number: "))
+# rev =0
+# while n>0:
+#     digit = n%10 
+#     rev = rev*10+digit 
+#     n = n//10 
+# print(rev)
+#########prime number
+# n = int(input("enter the number:"))
+# if n>1:
+#     for i in range(2,n):
+#         if n%i==0:
+#             print("not a prime number")
+#             break
+#     else:
+#         print("prime number")
+# else:
+#     print("not a prime number")
+#############list 1-D
+n = list(map(int, input("Enter elements : ").split()))
+app = int(input("Element to append: "))
+n.append(app)
+print("After append:", n)
+index = int(input("Index to insert at: "))
+element = int(input("Element to insert: "))
+if index <= len(n):
+    n.insert(index, element)
+    print("After insert:", n)
+else:
+    print("Index out of range!")
+    rem = int(input("Element to remove "))
+rem = int(input("Element to remove: "))
+if rem in n:
+    n.remove(rem)
+    print("After removal:", n)
+else:
+    print("Element not found")
 
+n.sort()
+print("Sorted (Asc):", n)
+n.sort(reverse=True)
+print("Sorted (Desc):", n)
