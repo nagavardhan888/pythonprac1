@@ -60,26 +60,34 @@
 # else:
 #     print("not a prime number")
 #############list 1-D
-n = list(map(int, input("Enter elements : ").split()))
-app = int(input("Element to append: "))
-n.append(app)
-print("After append:", n)
-index = int(input("Index to insert at: "))
-element = int(input("Element to insert: "))
-if index <= len(n):
-    n.insert(index, element)
-    print("After insert:", n)
-else:
-    print("Index out of range!")
-    rem = int(input("Element to remove "))
-rem = int(input("Element to remove: "))
-if rem in n:
-    n.remove(rem)
-    print("After removal:", n)
-else:
-    print("Element not found")
+# n = list(map(int, input("Enter elements : ").split()))
+# app = int(input("Element to append: "))
+# n.append(app)
+# print("After append:", n)
+# index = int(input("Index to insert at: "))
+# element = int(input("Element to insert: "))
+# if index <= len(n):
+#     n.insert(index, element)
+#     print("After insert:", n)
+# else:
+#     print("Index out of range!")
+#     rem = int(input("Element to remove "))
+# rem = int(input("Element to remove: "))
+# if rem in n:
+#     n.remove(rem)
+#     print("After removal:", n)
+# else:
+#     print("Element not found")
 
-n.sort()
-print("Sorted (Asc):", n)
-n.sort(reverse=True)
-print("Sorted (Desc):", n)
+# n.sort()
+# print("Sorted (Asc):", n)
+# n.sort(reverse=True)
+# print("Sorted (Desc):", n)
+###############student record system 
+n = int(input("enter the number of students:"))
+t = tuple(map(int,input("enter the marks of students:").split()))
+i = int(input("enter the index of student to access marks:"))
+print(min(t))
+print(max(t))
+print(t.index(i))
+print(t[0:3])
